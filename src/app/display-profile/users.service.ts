@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http';
-import {map} from 'rxjs/operators';
 import {Observable} from 'rxjs';
 import { Repositories } from '../repositories';
 import { environment } from '../../environments/environment';
@@ -10,7 +9,7 @@ import { environment } from '../../environments/environment';
 @Injectable()
 export class UsersService {
 
-  baseURL:string="https://api.github.com/"
+  baseURL:string="https://api.github.com/users/"
 
   constructor(private http:HttpClient) {
     console.log("service is now ready!"); 
