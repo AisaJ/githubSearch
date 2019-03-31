@@ -7,14 +7,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GithubSearchComponent } from './github-search/github-search.component';
 import { SearchComponent } from './search/search.component';
-import { Observable} from 'rxjs';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     GithubSearchComponent,
-    SearchComponent,
-    Observable
+    SearchComponent,    
   ],
   imports: [
     BrowserModule,

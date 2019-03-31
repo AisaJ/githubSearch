@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {UserProfile} from '../user-profile'
+import {UsersService} from '../display-profile/users.service'
 import {UserRepository} from '../user-repository'
 
 @Component({

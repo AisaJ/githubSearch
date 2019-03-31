@@ -11,9 +11,13 @@ import { HttpClient } from '@angular/common/http';
 })
 export class GithubSearchComponent implements OnInit {
   
+  // userProfile: any=[];
 
-  constructor(usersService:UsersService,private http:HttpClient) { 
-    this.usersService = usersService;
+
+  constructor(private usersService:UsersService,private http:HttpClient) { 
+    this.usersService.getUserProfile().subscribe(profile =>{
+      console.log(profile);
+    });
   }
 
   ngOnInit() {

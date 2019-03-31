@@ -1,21 +1,32 @@
 import { Injectable } from '@angular/core';
 // import { GithubSearch } from '../github-search/github-search.component'
 import { HttpClient } from '@angular/common/http';
-import { Observable} from 'rxjs';
+import {map} from 'rxjs/operators';
+import {Observable} from 'rxjs';
+import { environment } from '../../environments/environment';
 
-@Injectable({
-  providedIn: 'root'
-})
+
+@Injectable()
 export class UsersService {
 
-  public username:string;
+   username:string;
 
   constructor(private http:HttpClient) {
     console.log("service is now ready!"); 
     this.username = 'AisaJ';
    }
+   public getData(){
+     this.HttpClient.get<any[]>(this.baseUrl+'userProfile/'+this.username+'userRepository/').subscribe(data =>{
+       this.data = data;
+     },
+     error => {
 
-   getUserProfile(){
-     return this.http.get('https://api.github.com/users/'+this.username).map(res=>res.json()); 
+     }
+     );
    }
+
+  //  getUserProfile(){
+  //   console.log(this.username);
+  //    return this.http.get<any[]>("https://api.github.com/users/"+ this.username+"?access_token="+environment.apiKey); 
+  //    }
 }
