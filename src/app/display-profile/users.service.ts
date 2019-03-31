@@ -17,7 +17,7 @@ export class UsersService {
     // this.username = 'AisaJ';
    }
 
-   getUserRepository(username:string):Observable<Repositories[]>{
+   getRepositories(username:string):Observable<Repositories[]>{
      return this.http.get<Repositories[]>(this.baseURL + 'profiles/' + username + '/repositories')
    }
 
