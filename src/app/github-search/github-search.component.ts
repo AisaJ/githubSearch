@@ -13,7 +13,7 @@ import { Repositories } from '../repositories';
 export class GithubSearchComponent implements OnInit {
   
   username: string = 'AisaJ';
-  Repositories: Repositories[];
+  repositories: Repositories[];
 
   loading: boolean=false;
   errorMessage;
@@ -23,7 +23,7 @@ export class GithubSearchComponent implements OnInit {
       this.loading=true;
       this.errorMessage=" ";
       this.usersService.getRepositories(this.username)
-        .subscribe((response) => {this.Repositories=response;},
+        .subscribe((response) => {this.repositories=response;},
         (error) => {this.errorMessage=error; this.loading=false; },
         () => {this.loading=false})
     
