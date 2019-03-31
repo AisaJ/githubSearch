@@ -9,11 +9,11 @@ import { environment } from '../../environments/environment';
 @Injectable()
 export class UsersService {
 
-   username:string;
+  //  username:string;
 
   constructor(private http:HttpClient) {
     console.log("service is now ready!"); 
-    this.username = 'AisaJ';
+    // this.username = 'AisaJ';
    }
    public getData(){
      this.HttpClient.get<any[]>(this.baseUrl+'userProfile/'+this.username+'userRepository/').subscribe(data =>{
