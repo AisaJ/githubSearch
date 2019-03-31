@@ -20,7 +20,7 @@ import { SearchComponent } from './search/search.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [UsersService],
   bootstrap: [AppComponent]
