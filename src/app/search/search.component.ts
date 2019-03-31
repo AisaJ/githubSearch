@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {UsersService} from '../display-profile/users.service'
-import {UserRepository} from '../user-repository'
+import {Repositories} from '../repositories'
 
 @Component({
   selector: 'app-search',
@@ -9,7 +9,6 @@ import {UserRepository} from '../user-repository'
 })
 export class SearchComponent implements OnInit {
   
-  userProfile:any=[];
 
   constructor() { }
 
