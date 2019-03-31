@@ -21,18 +21,4 @@ export class UsersService {
      return this.http.get<Repositories[]>(this.baseURL + 'profiles/' + username + '/repositories')
    }
 
-  //  public getData(){
-  //    this.HttpClient.get<any[]>(this.baseUrl+'userProfile/'+this.username+'userRepository/').subscribe(data =>{
-  //      this.data = data;
-  //    },
-  //    error => {
-
-  //    }
-  //    );
-  //  }
-
-  //  getUserProfile(){
-  //   console.log(this.username);
-  //    return this.http.get<any[]>("https://api.github.com/users/"+ this.username+"?access_token="+environment.apiKey); 
-  //    }
 }
