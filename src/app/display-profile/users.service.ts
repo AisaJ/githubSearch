@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {map} from 'rxjs/operators';
 import {Observable} from 'rxjs';
-import { UserRepository } from './user-repository';
+import { Repositories } from '../repositories';
 import { environment } from '../../environments/environment';
 
 
@@ -17,8 +17,8 @@ export class UsersService {
     // this.username = 'AisaJ';
    }
 
-   getUserRepository(username:string):Observable<user-repository[]>{
-     return this.http.get<user-repository[]>(this.baseURL + 'user-profie')
+   getUserRepository(username:string):Observable<Repositories[]>{
+     return this.http.get<Repositories[]>(this.baseURL + 'profiles/' + username + '/repositories')
    }
 
   //  public getData(){
