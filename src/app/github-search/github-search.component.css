@@ -1,0 +1,18 @@
+.comntainer{
+  font-size: 1.5rem;
+}
+.table{
+  padding: 2rem;
+  font-size: 2rem;
+}
+td{
+  font-family: 'Patrick Hand', cursive;
+}
+img{
+  width:250px;
+  height: 250px;
+  background: #5441;
+}
+.profile-info{
+  border-left: 2px solid white;
+}

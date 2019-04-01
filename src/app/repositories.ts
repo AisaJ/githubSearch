@@ -3,4 +3,5 @@ export class Repositories {
     name: string;
     html_url: string;
     description: string;
+    language: string;
 }

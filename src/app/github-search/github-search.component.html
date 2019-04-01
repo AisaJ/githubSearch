@@ -12,14 +12,22 @@
       </div>
     </div>
 
-  <div *ngIf="loading"> loading </div>
+  <!-- <div *ngIf="loading"> loading </div>
 
-  <div *ngIf="errorMessage" class="alert alert-warning"><strong>Warning!</strong>{{errorMessage}}</div>
+  <div *ngIf="errorMessage" class="alert alert-warning"><strong>Warning!</strong>{{errorMessage}}</div> -->
 
-  <div class="row profile">
-    <div class="card card-block">
-        <img src="{{profiles.avatar_url}}" alt="Profile-avatar">
-    </div>    
+  <div class="row profile">   
+    <div class="col-md-5">
+        <img src="{{profiles.avatar_url}}" alt="">
+    </div>
+    <div class="col-md-7">
+        <div class="profile-info">
+            <ul>
+              <li>Github Name: {{profiles.login}}</li>
+            </ul>
+        </div>
+    </div>     
+          
   </div>
 
   <div class="row">
@@ -31,14 +39,15 @@
             <th>Name</th>
             <th>Github Url</th>
             <th>Description</th>
+            <th>Language</th>
             <th>Forked</th>
          </tr>
         </thead>
         <tbody>
-         <tr *ngFor="let repository of repositories">            
-            <td>{{repository.name}}</td>
+         <tr *ngFor="let repository of repositories">           <td>{{repository.name}}</td>
             <td>{{repository.html_url}}</td>
             <td>{{repository.description}}</td>
+            <td>{{repository.language}}</td>
             <td>{{repository.fork}}</td>
           </tr>
         </tbody>
