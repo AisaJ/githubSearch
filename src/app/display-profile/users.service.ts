@@ -17,8 +17,11 @@ export class UsersService {
    }
 
    getRepositories(username:string):Observable<Repositories[]>{
-     return this.http.get<Repositories[]>(this.baseURL + 'profiles/' + username + '/repositories')
+     return this.http.get<Repositories[]>(this.baseURL + username + '/repos')
    }
+   getProfiles(username:string):Observable<Repositories[]>{
+    return this.http.get<Repositories[]>(this.baseURL + username)
+  }
 
 
 }

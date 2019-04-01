@@ -1,5 +1,5 @@
 export class Repositories {
-  id: string;
+  fork: boolean;
     name: string;
     html_url: string;
     description: string;
