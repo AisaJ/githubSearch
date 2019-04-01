@@ -8,4 +8,5 @@ export class Profiles {
   followers: number;
   following: number;
   updated_at: string;
+  html_url: string;
 }

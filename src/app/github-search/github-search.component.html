@@ -4,7 +4,8 @@
       <div class="form-group">
       
         <input type="text" class="form-control" name="username" placeholder="Enter Github user name" [(ngModel)]="username" (keyup)="getProfiles($event)" size="6">
-        <button class='btn btn-primary' id="profile" type="button" (click)="getProfiles()">User Profile</button><button class='btn btn-primary' id="repos" type="button" (click)="getRepositories()">See Repositories</button>
+        <p id="intro">Find the greatest minds & most spectacular works done, here.</p>
+        <button class='btn btn-primary' id="profile" type="button" (click)="getProfiles()">User Profile</button><a href="https://github.com/" target="_blank"><button class="btn btn-primary">Create Github Account</button></a><button class='btn btn-primary' id="repos" type="button" (click)="getRepositories()">See Repositories</button>
       </div>
   </div>
       
