@@ -5,6 +5,9 @@
 .table{
   padding: 2rem;  
 }
+th{
+  font-size: 1.3rem;
+}
 td{
   font-family: 'Patrick Hand', cursive;
   font-size: 1.5rem;
@@ -17,11 +20,28 @@ img{
   background-position: center;
 }
 .profile-info{
-  border-left: 2px solid white;
+  margin-left: 1rem;
 }
 .row{
   margin-bottom: 3rem;
 }
 .profile-info{
   text-decoration: none;
+}
+input{
+  padding:1.5rem;
+  margin-right: 15%;
+  margin-left: 15%;
+  width: 70%;
+  margin-top: 1rem;
+}
+.col-md-1{
+  border-left: 2px solid white;
+}
+#repos{
+  float: right;
+  margin-right: 5%;
+}
+#profile{
+  margin-left: 5%;
 }
