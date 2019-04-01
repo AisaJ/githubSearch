@@ -1,9 +1,13 @@
-.comntainer{
+.comntainer-fluid{
   font-size: 1.5rem;
   margin-top: 2rem;
 }
 .table{
-  padding: 2rem;  
+  padding: 2rem; 
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%; 
+  color: white;
 }
 th{
   font-size: 1.3rem;
@@ -48,4 +52,11 @@ input{
 .card-block{
   background-image: url('/assets/images/infinite.jpeg');
   background-position: center;
+}
+h3{
+  text-align: center;
+}
+a{
+  text-decoration: underline;
+  color:green;
 }
