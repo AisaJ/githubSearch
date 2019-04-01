@@ -3,20 +3,25 @@
   margin-top: 2rem;
 }
 .table{
-  padding: 2rem;
-  font-size: 2rem;
+  padding: 2rem;  
 }
 td{
   font-family: 'Patrick Hand', cursive;
+  font-size: 1.5rem;
 }
 img{
   width:250px;
   height: 250px;
-  background: #5441;
+  background-image: url('/assets/images/avatar.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .profile-info{
   border-left: 2px solid white;
 }
 .row{
   margin-bottom: 3rem;
+}
+.profile-info{
+  text-decoration: none;
 }
