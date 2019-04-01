@@ -1,5 +1,6 @@
 .comntainer{
   font-size: 1.5rem;
+  margin-top: 2rem;
 }
 .table{
   padding: 2rem;
@@ -15,4 +16,7 @@ img{
 }
 .profile-info{
   border-left: 2px solid white;
+}
+.row{
+  margin-bottom: 3rem;
 }
