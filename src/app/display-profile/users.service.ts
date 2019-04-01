@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import {Observable} from 'rxjs';
 import { Repositories } from '../repositories';
 import { environment } from '../../environments/environment';
+import {Profiles} from '../profiles';
 
 
 @Injectable()
@@ -19,8 +20,8 @@ export class UsersService {
    getRepositories(username:string):Observable<Repositories[]>{
      return this.http.get<Repositories[]>(this.baseURL + username + '/repos')
    }
-   getProfiles(username:string):Observable<Repositories[]>{
-    return this.http.get<Repositories[]>(this.baseURL + username)
+   getProfiles(username:string):Observable<Profiles[]>{
+    return this.http.get<Profiles[]>(this.baseURL + username)
   }
 
 
