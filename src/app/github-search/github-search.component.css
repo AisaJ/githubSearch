@@ -7,7 +7,7 @@
   margin-left: 10%;
   margin-right: 10%;
   width: 80%; 
-  color: white;
+  color: black;
 }
 th{
   font-size: 1.3rem;
@@ -22,15 +22,14 @@ img{
   background-image: url('/assets/images/avatar.svg');
   background-repeat: no-repeat;
   background-position: center;
-}
-.profile-info{
-  margin-left: 1rem;
+  margin-left: 25%;
 }
 .row{
   margin-bottom: 3rem;
 }
 .profile-info{
   text-decoration: none;
+  margin-left: 1rem;
 }
 input{
   padding:1.5rem;
@@ -40,7 +39,7 @@ input{
   margin-top: 1rem;
 }
 .col-md-1{
-  border-left: 2px solid white;
+  border-left: 2px solid black;
 }
 #repos{
   float: right;
@@ -53,10 +52,18 @@ input{
   background-image: url('/assets/images/infinite.jpeg');
   background-position: center;
 }
-h3{
-  text-align: center;
-}
-a{
+#repo-link{
   text-decoration: underline;
-  color:green;
+  text-decoration-color:blue;
+  color: blue;
+}
+#repo-title{
+  margin-left: 40%;
+}
+.card-title{
+  padding: 0.3rem;
+}
+#name-title{
+  text-align: center;
+  font-size: 2rem;
 }

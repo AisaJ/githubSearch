@@ -1,6 +1,7 @@
 export class Profiles {
   avatar_url: string;
   login:string;
+  name: string;
   email: string;
   public_repos: number;
   hireable: string;
