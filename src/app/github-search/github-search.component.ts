@@ -31,7 +31,7 @@ export class GithubSearchComponent implements OnInit {
         () => {this.loading=false})
       }
       
-      public getProfiles(){
+      public getProfiles(event:any){
         
         this.usersService.getProfiles(this.username)
           .subscribe((response) => {this.profiles=response;

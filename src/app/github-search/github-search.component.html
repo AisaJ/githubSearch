@@ -3,9 +3,8 @@
   <div class="row card card-block">
       <div class="form-group">
       
-        <input type="text" class="form-control" name="username" placeholder="Enter Github user name" [(ngModel)]="username">
-      
-        <button class='btn btn-primary' type="button" >User Profile</button>
+        <input type="text" class="form-control" name="username" placeholder="Enter Github user name" [(ngModel)]="username" (keyup)="getProfiles($event)">
+        <button class='btn btn-primary' type="button" (click)="getProfiles()">User Profile</button>
       </div>
       
       <div class="form-group">
@@ -16,6 +15,12 @@
   <div *ngIf="loading"> loading </div>
 
   <div *ngIf="errorMessage" class="alert alert-warning"><strong>Warning!</strong>{{errorMessage}}</div>
+
+  <div class="row profile">
+    <div class="card card-block">
+        <img src="{{profiles.avatar_url}}" alt="Profile-avatar">
+    </div>    
+  </div>
 
   <div class="row">
     <h3>REPOSITORY INFO</h3>
