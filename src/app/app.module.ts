@@ -14,6 +14,12 @@ import { BackgroundColorDirective } from './background-color.directive';
 import { ReverseDatePipe } from './reverse-date.pipe';
 import {RoutingModule} from './routing/routing.module'
 
+
+//Defining routes
+const routes:Routes=[
+  {path:"github-search",component:GithubSearchComponent},
+  {path:"repos",component:ReposComponent}
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,8 +29,7 @@ import {RoutingModule} from './routing/routing.module'
     BackgroundColorDirective,
     ReverseDatePipe,
          
-  ],
-  
+  ], 
   
   imports: [
     BrowserModule,
@@ -32,6 +37,7 @@ import {RoutingModule} from './routing/routing.module'
     AppRoutingModule,
     FormsModule,
     RoutingModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [UsersService],
   bootstrap: [AppComponent]

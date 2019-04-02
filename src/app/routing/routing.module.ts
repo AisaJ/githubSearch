@@ -7,8 +7,8 @@ import { ReposComponent } from '../repos/repos.component';
 
 //Defining routes
 const routes:Routes=[
-  {path:"/github-search",component:GithubSearchComponent},
-  {path:'/github-search:id',component:GithubSearchComponent}
+  {path:"github-search",component:GithubSearchComponent},
+  {path:"repos",component:ReposComponent}
 ]
 
 @NgModule({
