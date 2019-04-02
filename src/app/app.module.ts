@@ -11,6 +11,7 @@ import { SearchComponent } from './search/search.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ReposComponent } from './repos/repos.component';
 import { BackgroundColorDirective } from './background-color.directive';
+import { ReverseDatePipe } from './reverse-date.pipe';
 
 
 //Defining routes
@@ -25,6 +26,7 @@ const routes:Routes=[
     SearchComponent,
     ReposComponent,
     BackgroundColorDirective,
+    ReverseDatePipe,
          
   ],
   imports: [

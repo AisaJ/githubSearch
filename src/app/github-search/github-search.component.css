@@ -78,4 +78,5 @@ input{
 }
 #git-name{
   color: #d8e3e3;
+  text-transform: uppercase;
 }
