@@ -80,3 +80,8 @@ input{
   color: #d8e3e3;
   text-transform: uppercase;
 }
+@media screen and (max-width: 900px) {
+  .col-md-1{
+    border-left: 0px solid #d8e3e3;
+  }
+}
