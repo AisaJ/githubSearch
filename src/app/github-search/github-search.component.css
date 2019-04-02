@@ -49,7 +49,7 @@ input{
   margin-left: 5%;
 }
 .card-block{
-  background-image: url('/assets/images/infinite.jpeg');
+  background-image: url('assets/images/infinite.jpeg');
   background-position: center;
 }
 #repo-link{
