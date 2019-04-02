@@ -10,6 +10,7 @@ import { GithubSearchComponent } from './github-search/github-search.component';
 import { SearchComponent } from './search/search.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ReposComponent } from './repos/repos.component';
+import { BoxShadowDirective } from './box-shadow.directive';
 
 //Defining routes
 const routes:Routes=[
@@ -21,7 +22,8 @@ const routes:Routes=[
     AppComponent,
     GithubSearchComponent,
     SearchComponent,
-    ReposComponent       
+    ReposComponent,
+    BoxShadowDirective       
   ],
   imports: [
     BrowserModule,
