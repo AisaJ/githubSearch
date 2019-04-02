@@ -15,6 +15,7 @@ export class GithubSearchComponent implements OnInit {
   username: string = 'AisaJ';
   repositories: Repositories[];
   profiles: Profiles[];
+  users: any=[];
 
   loading: boolean=false;
   errorMessage;
@@ -34,7 +35,7 @@ export class GithubSearchComponent implements OnInit {
       public getProfiles(event:any){
         
         this.usersService.getProfiles(this.username)
-          .subscribe((response) => {this.profiles=response;
+          .subscribe((response) => {this.users=response;
           console.log(response)
           })
         }

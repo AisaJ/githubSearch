@@ -5,7 +5,7 @@
       
         <input type="text" class="form-control" name="username" placeholder="Enter Github user name" [(ngModel)]="username" (keyup)="getProfiles($event)" size="6">
         <p id="intro">Find the greatest minds & most spectacular works done, here.</p>
-        <button class='btn btn-primary' id="profile" type="button" (click)="getProfiles()">User Profile</button><a href="https://github.com/" target="_blank"><button class="btn btn-primary">Create Github Account</button></a><button class='btn btn-primary' id="repos" type="button" (click)="getRepositories()">See Repositories</button>
+        <button class='btn btn-primary' id="profile" type="button" (click)="getProfiles(0)">User Profile</button><a href="https://github.com/" target="_blank"><button class="btn btn-primary">Create Github Account</button></a><button class='btn btn-primary' id="repos" type="button" (click)="getRepositories()">See Repositories</button>
       </div>
   </div>
       
@@ -15,8 +15,8 @@
 
   <div class="row profile">   
     <div class="col-md-5">
-      <p id="name-title">{{profiles.name}}</p>
-      <img src="{{profiles.avatar_url}}" alt="">
+      <p id="name-title">{{users.name}}</p>
+      <img src="{{users.avatar_url}}" alt="">
     </div>
     <div class="col-md-1">
 
@@ -24,13 +24,13 @@
     <div class="col-md-6">
         <div class="profile-info">
             
-          <p class="card card-title">Github Name: {{profiles.login}}</p>
-          <p class="card card-title">Email address: {{profiles.email}}</p>
-          <p class="card card-title">Repositories: {{profiles.public_repos}}</p>
-          <p class="card card-title">Hireable: {{profiles.hireable}}</p>
-          <p class="card card-title">Followers: {{profiles.followers}}</p>
-          <p class="card card-title">Following: {{profiles.following}}</p>
-          <p class="card card-title">Last updated: {{profiles.updated_at}}</p>
+          <p class="card card-title">Github Name: {{users.login}}</p>
+          <p class="card card-title">Email address: {{users.email}}</p>
+          <p class="card card-title">Repositories: {{users.public_repos}}</p>
+          <p class="card card-title">Hireable: {{users.hireable}}</p>
+          <p class="card card-title">Followers: {{users.followers}}</p>
+          <p class="card card-title">Following: {{users.following}}</p>
+          <p class="card card-title">Last updated: {{users.updated_at}}</p>
             
         </div>
     </div>     

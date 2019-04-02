@@ -1,5 +1,5 @@
 # Github-search
-#### This is a github-account search web application. Allows users to find github users and their repositories , April 2, 2019.
+#### This is a github-account search web application. Allows users to find github users' and their repositories , April 2, 2019.
 #### By **Aisa Jemila**
 ## Description
 Github repository: https://aisaj.github.io/githubSearch/
