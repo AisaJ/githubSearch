@@ -16,13 +16,17 @@ td{
   font-family: 'Patrick Hand', cursive;
   font-size: 1.5rem;
 }
-img{
+.image{
   width:250px;
   height: 250px;
   background-image: url('/assets/images/avatar.svg');
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 25%;
+}
+.image img{
+  width:250px;
+  height: 250px;
 }
 .row{
   margin-bottom: 3rem;
