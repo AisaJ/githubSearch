@@ -12,7 +12,7 @@ import {Profiles} from '../profiles';
 })
 export class GithubSearchComponent implements OnInit {
   
-  username: string = 'AisaJ';
+  username: string = "";
   repositories: Repositories[];
   profiles: Profiles[];
   users: any=[];
