@@ -17,6 +17,8 @@ This application provides a platform for users to find Github users, see their p
 | User views the github account repositories | Clicks the see repositories button | Available repositories display below profile details |
 | User can create a github account | User clicks on the create github account | User is redirected to the github home page |
 | User views full details of specified repository | User clicks on the view on github link | User is redirected to the repository details on the specified github account |
+| User redirected to repositoties page | Clicks see repositories button | Repos page |
+| User redirected to home page | Clicks home button | Home page |
 ## Known Bugs
 The application functions as expected. In case you come across any errors or failure of the application, do reach out via email: *aisajemila@gmail.com*
 ## Technologies Used
