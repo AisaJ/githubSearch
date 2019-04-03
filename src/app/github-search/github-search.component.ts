@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Repositories } from '../repositories';
 import {Profiles} from '../profiles';
 
+
 @Component({
   selector: 'app-github-search',
   templateUrl: './github-search.component.html',
@@ -21,7 +22,8 @@ export class GithubSearchComponent implements OnInit {
   loading: boolean=false;
   errorMessage;
 
-  constructor(private usersService:UsersService, private http:HttpClient   ) { }
+
+  constructor(private usersService:UsersService, private http:HttpClient ) { }
      public getRepositories(){
       this.loading=true;
       this.errorMessage=" ";

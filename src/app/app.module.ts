@@ -15,11 +15,6 @@ import { ReverseDatePipe } from './reverse-date.pipe';
 import {RoutingModule} from './routing/routing.module'
 
 
-//Defining routes
-const routes:Routes=[
-  {path:"github-search",component:GithubSearchComponent},
-  {path:"repos",component:ReposComponent}
-]
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +32,6 @@ const routes:Routes=[
     AppRoutingModule,
     FormsModule,
     RoutingModule,
-    RouterModule.forRoot(routes)
   ],
   providers: [UsersService],
   bootstrap: [AppComponent]

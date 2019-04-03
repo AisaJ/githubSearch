@@ -2,20 +2,6 @@
   font-size: 1.5rem;
   margin-top: 2rem;
 }
-.table{
-  padding: 2rem; 
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%; 
-  color: black;
-}
-th{
-  font-size: 1.3rem;
-}
-td{
-  font-family: 'Patrick Hand', cursive;
-  font-size: 1.5rem;
-}
 .image{
   width:250px;
   height: 250px;
@@ -56,14 +42,6 @@ input{
   background-image: url('/assets/images/infinite.jpeg');
   background-position: center;
 }
-#repo-link{
-  text-decoration: underline;
-  text-decoration-color:blue;
-  color: blue;
-}
-#repo-title{
-  margin-left: 40%;
-}
 .card-title{
   padding: 0.3rem;
 }
@@ -72,7 +50,7 @@ input{
   font-size: 2rem;
 }
 #intro{
-  color: white;
+  color: #d8e3e3;
   text-align: center;
   font-size: 1.5rem;
 }
